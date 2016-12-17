@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.gs-input {
+  border: 1px solid;
+  margin: auto;
+}
+
+#search {
+  border: none;
+  margin-bottom: 0px;
+}
+
+#search:focus {
+  border-bottom: 0px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+#search:focus + label {
+  color: white;
+  border-bottom: 0px solid white;
+}

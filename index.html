@@ -2,45 +2,65 @@
 <html lang="en">
 <head>
   <title>Google</title>
-  <link type="text/css" rel="stylesheet" href="CSS/reset.css"/> <!--Clear browser default CSS Styles -->
-  <link type="text/css" rel="stylesheet" href="css/main.css"/> <!--Main CSS document -->
-  <link rel="icon" href="images/googleg_standard_color_128dp.png" sizes="32x32">
+  <!--<link type="text/css" rel="stylesheet" href="./css/reset.css"/> <!--Clear browser default CSS Styles -->
+  <!--<link type="text/css" rel="stylesheet" href="./css/main.css"/> <!--Main CSS document -->
+
+  <link rel="icon" href="https://www.google.se/images/branding/product/ico/googleg_lodp.ico">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css" media="screen" title="no title">
+  <link rel="stylesheet" href="./css/yoieh.css" media="screen" title="no title">
 </head>
 <body>
-    <nav>
-      <ul>
-        <li><div id="sign-in">Sign in</div></li>
-        <li><a href="#Apps">Apps</a></li>
-        <li><a href="#Images">Images</a></li>
-        <li><a href="#Gmail">Gmail</a></li>
+    <nav class="white z-depth-0 continer">
+      <ul class="right">
+        <li><a class="black-text" href="#Gmail">Gmail</a></li>
+        <li><a class="black-text" href="#Images">Images</a></li>
+        <li><a class="black-text" href="#Apps"><i class="material-icons">apps</i></a></li>
+        <li><div id="sign-in" class="btn light-blue darken-3"><b>Sign in</b></div></li>
       </ul>
     </nav>
-    <div class="search-container">
-      <img src="images/logo.gif" />
-      <form action="#" method="get">
-        <input type="search" name="search" id="search" />
-        <div class="button-wrapper">
-          <button type="submit" name="search">Google Search</button>
-          <button type="submit" name="lucky">I'm feeling lucky</button>
+
+    <div class="row">
+      <div class="container">
+        <div class="continer">
+          <div class="row center-align">
+            <img class="" src="images/logo.gif" />
+          </div>
+          <form action="https://www.google.se/search" method="get">
+            <ul class="collection row continer">
+              <li class="valign-wrapper">
+                <input id="search" class="validate valign col s10" type="text" name="q" />
+                <a href="#"><i class="grey-text valign material-icons col s1">keyboard</i></a>
+                <a href="#"><i class="grey-text valign material-icons col s1">mic</i></a>
+              </li>
+            </ul>
+            <center class="row continer">
+                  <button class="grey-text btn grey lighten-3" type="submit"><b>Google Search</b></button>
+                  <button class="grey-text btn grey lighten-3" type="submit"><b>I'm feeling lucky</b></button>
+            </center>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
-    <footer>
-      <div class="left-links">
-        <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Business">Business</a></li>
-          <li><a href="#Advertising">Advertising</a></li>
+
+    <footer class="">
+      <nav class="grey lighten-3">
+        <ul class="left">
+          <li><a class="black-text" href="#Advertising">Advertising</a></li>
+          <li><a class="black-text" href="#Business">Business</a></li>
+          <li><a class="black-text" href="#About">About</a></li>
         </ul>
-      </div>
-      <div class="right-links">
-        <ul>
-          <li id="last"><a href="https://www.google.com">Use Real Google!</a></li>
-          <li><a href="#Settings">Settings</a></li>
-          <li><a href="#Terms">Terms</a></li>
-          <li><a href="#Privacy">Privacy</a></li>
+
+        <ul class="right">
+          <li><a class="black-text" href="#Privacy">Privacy</a></li>
+          <li><a class="black-text" href="#Terms">Terms</a></li>
+          <li><a class="black-text" href="#Settings">Settings</a></li>
+          <li id="last"><a class="black-text" href="https://www.google.com">Use Real Google!</a></li>
         </ul>
-      </div>
+      </nav>
     </footer>
 </body>
 </html>
+<script src="./bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+<script src="./bower_components/materialize/dist/js/materialize.js" charset="utf-8"></script>
